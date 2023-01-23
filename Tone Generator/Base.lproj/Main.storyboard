@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3CZ-up-Rib">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Test View Controller-->
+        <scene sceneID="WPe-sa-zWa">
+            <objects>
+                <viewController id="3CZ-up-Rib" customClass="TestViewController" customModule="Tone_Generator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1B7-ac-jnn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8000 Hz" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VwG-U2-tJA">
+                                <rect key="frame" x="20" y="324" width="374" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="LfP-KX-2MP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ECX-gV-Ueb">
+                                <rect key="frame" x="20" y="802" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="zH4-Yu-djW"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="진단 받기">
+                                    <color key="baseBackgroundColor" red="0.2407866716" green="0.29609614610000001" blue="0.63532608749999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="chartAppear:" destination="3CZ-up-Rib" eventType="touchUpInside" id="sJn-SW-RFC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kos-2L-OLN">
+                                <rect key="frame" x="20" y="742" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="WPZ-Co-YuV"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="계속">
+                                    <color key="baseBackgroundColor" red="0.2407866716" green="0.29609614610000001" blue="0.63532608749999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="actionYes:" destination="3CZ-up-Rib" eventType="touchUpInside" id="Uph-98-6jg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Oq-gC-wzg">
+                                <rect key="frame" x="20" y="742" width="374" height="40"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="검사 시작">
+                                    <color key="baseBackgroundColor" red="0.2407866716" green="0.29609614610000001" blue="0.63532608749999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="actionStart:" destination="3CZ-up-Rib" eventType="touchUpInside" id="THz-dM-BqC"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="cQU-i1-AgX">
+                                <rect key="frame" x="48" y="153" width="318" height="182"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bwz-vE-bhd">
+                                <rect key="frame" x="20" y="366" width="374" height="38.5"/>
+                                <string key="text">소리를 듣는 즉시 
+'계속' 버튼을 눌러주세요.</string>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YUh-C1-iSI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VwG-U2-tJA" firstAttribute="leading" secondItem="YUh-C1-iSI" secondAttribute="leading" constant="20" id="2Wb-FE-Fxi"/>
+                            <constraint firstItem="VwG-U2-tJA" firstAttribute="top" secondItem="YUh-C1-iSI" secondAttribute="top" constant="280" id="6Xh-V4-p5b"/>
+                            <constraint firstItem="ECX-gV-Ueb" firstAttribute="bottom" secondItem="YUh-C1-iSI" secondAttribute="bottom" constant="-20" id="8mB-Pt-5n1"/>
+                            <constraint firstItem="Kos-2L-OLN" firstAttribute="leading" secondItem="9Oq-gC-wzg" secondAttribute="leading" id="Clc-F5-Gui"/>
+                            <constraint firstItem="YUh-C1-iSI" firstAttribute="trailing" secondItem="Kos-2L-OLN" secondAttribute="trailing" constant="20" id="Cng-1B-zm4"/>
+                            <constraint firstItem="YUh-C1-iSI" firstAttribute="trailing" secondItem="cQU-i1-AgX" secondAttribute="trailing" constant="48" id="MF0-9n-DIZ"/>
+                            <constraint firstItem="ECX-gV-Ueb" firstAttribute="leading" secondItem="YUh-C1-iSI" secondAttribute="leading" constant="20" id="MdN-UD-6ci"/>
+                            <constraint firstItem="cQU-i1-AgX" firstAttribute="leading" secondItem="YUh-C1-iSI" secondAttribute="leading" constant="48" id="NGM-9V-UlD"/>
+                            <constraint firstItem="Kos-2L-OLN" firstAttribute="trailing" secondItem="9Oq-gC-wzg" secondAttribute="trailing" id="NPk-TD-1cs"/>
+                            <constraint firstItem="ECX-gV-Ueb" firstAttribute="top" secondItem="Kos-2L-OLN" secondAttribute="bottom" constant="20" id="ZBh-A7-kV9"/>
+                            <constraint firstItem="cQU-i1-AgX" firstAttribute="top" secondItem="YUh-C1-iSI" secondAttribute="top" constant="109" id="aQc-I4-woJ"/>
+                            <constraint firstItem="YUh-C1-iSI" firstAttribute="trailing" secondItem="bwz-vE-bhd" secondAttribute="trailing" constant="20" id="d8R-zY-evI"/>
+                            <constraint firstItem="YUh-C1-iSI" firstAttribute="trailing" secondItem="VwG-U2-tJA" secondAttribute="trailing" constant="20" id="dRm-Kb-2NZ"/>
+                            <constraint firstItem="Kos-2L-OLN" firstAttribute="bottom" secondItem="9Oq-gC-wzg" secondAttribute="bottom" id="dlA-QO-yx2"/>
+                            <constraint firstItem="VwG-U2-tJA" firstAttribute="leading" secondItem="YUh-C1-iSI" secondAttribute="leading" constant="20" id="ewv-xe-D6j"/>
+                            <constraint firstItem="YUh-C1-iSI" firstAttribute="trailing" secondItem="VwG-U2-tJA" secondAttribute="trailing" constant="20" id="fG3-zU-1O6"/>
+                            <constraint firstItem="YUh-C1-iSI" firstAttribute="trailing" secondItem="ECX-gV-Ueb" secondAttribute="trailing" constant="20" id="iDT-Li-Pzs"/>
+                            <constraint firstItem="bwz-vE-bhd" firstAttribute="leading" secondItem="YUh-C1-iSI" secondAttribute="leading" constant="20" id="j2T-Sg-nGt"/>
+                            <constraint firstItem="Kos-2L-OLN" firstAttribute="leading" secondItem="YUh-C1-iSI" secondAttribute="leading" constant="20" id="qHg-Bl-4og"/>
+                            <constraint firstItem="bwz-vE-bhd" firstAttribute="top" secondItem="VwG-U2-tJA" secondAttribute="bottom" constant="10" id="yCa-OO-dRZ"/>
+                            <constraint firstItem="Kos-2L-OLN" firstAttribute="top" secondItem="9Oq-gC-wzg" secondAttribute="top" id="z6e-XE-ehb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonChart" destination="ECX-gV-Ueb" id="PHQ-Gj-w91"/>
+                        <outlet property="buttonNext" destination="Kos-2L-OLN" id="hO7-c6-nSo"/>
+                        <outlet property="buttonTestStart" destination="9Oq-gC-wzg" id="kZK-fJ-xR6"/>
+                        <outlet property="labelFrequency" destination="VwG-U2-tJA" id="AEK-c2-HIt"/>
+                        <outlet property="view" destination="1B7-ac-jnn" id="H5d-Oh-1lC"/>
+                        <segue destination="qNF-jG-gL9" kind="showDetail" identifier="segueChart" id="lEi-Pk-o0f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lsP-Kk-lvc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135" y="867"/>
+        </scene>
+        <!--Chart View Controller-->
+        <scene sceneID="Pri-dC-wgR">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="qNF-jG-gL9" customClass="ChartViewController" customModule="Tone_Generator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pWg-T0-jKq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IH4-Cd-KHE">
+                                <rect key="frame" x="20" y="802" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="5ew-dq-1Q9"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Back"/>
+                                <connections>
+                                    <action selector="actionClose:" destination="qNF-jG-gL9" eventType="touchUpInside" id="6uu-Iz-fRU"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bVS-qJ-mAO" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="20" y="164" width="374" height="249.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="bVS-qJ-mAO" secondAttribute="height" multiplier="12:8" id="a1p-zZ-NDS"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="수평형" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eur-Bv-OBx">
+                                <rect key="frame" x="20" y="463.5" width="374" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" red="0.2407866716" green="0.29609614610000001" blue="0.63532608749999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PyH-sX-CEo">
+                                <rect key="frame" x="10" y="503.5" width="394" height="38.5"/>
+                                <string key="text">소음성 난청이 의심됩니다.
+병원에서 검사를 받아보길 권장합니다.</string>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eDg-S0-4lS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bVS-qJ-mAO" firstAttribute="leading" secondItem="eDg-S0-4lS" secondAttribute="leading" constant="20" id="8gk-pN-xy5"/>
+                            <constraint firstItem="eur-Bv-OBx" firstAttribute="top" secondItem="bVS-qJ-mAO" secondAttribute="bottom" constant="50" id="9Rq-fG-Onk"/>
+                            <constraint firstItem="eDg-S0-4lS" firstAttribute="trailing" secondItem="bVS-qJ-mAO" secondAttribute="trailing" constant="20" id="Fak-9p-jJk"/>
+                            <constraint firstItem="PyH-sX-CEo" firstAttribute="leading" secondItem="eDg-S0-4lS" secondAttribute="leading" constant="10" id="ODq-FX-OgD"/>
+                            <constraint firstItem="bVS-qJ-mAO" firstAttribute="top" secondItem="eDg-S0-4lS" secondAttribute="top" constant="120" id="Qq6-EI-Plt"/>
+                            <constraint firstItem="PyH-sX-CEo" firstAttribute="top" secondItem="eur-Bv-OBx" secondAttribute="bottom" constant="10" id="SeC-va-4Hc"/>
+                            <constraint firstItem="eDg-S0-4lS" firstAttribute="trailing" secondItem="PyH-sX-CEo" secondAttribute="trailing" constant="10" id="TED-cx-uMe"/>
+                            <constraint firstItem="eDg-S0-4lS" firstAttribute="trailing" secondItem="eur-Bv-OBx" secondAttribute="trailing" constant="20" id="XPE-dI-llm"/>
+                            <constraint firstItem="IH4-Cd-KHE" firstAttribute="leading" secondItem="eDg-S0-4lS" secondAttribute="leading" constant="20" id="Xu5-Pi-68r"/>
+                            <constraint firstItem="eur-Bv-OBx" firstAttribute="leading" secondItem="eDg-S0-4lS" secondAttribute="leading" constant="20" id="Z0o-7G-Ju8"/>
+                            <constraint firstItem="eDg-S0-4lS" firstAttribute="trailing" secondItem="IH4-Cd-KHE" secondAttribute="trailing" constant="20" id="k00-Pn-89G"/>
+                            <constraint firstItem="eDg-S0-4lS" firstAttribute="bottom" secondItem="IH4-Cd-KHE" secondAttribute="bottom" constant="20" id="ppZ-9w-dbe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="chartView" destination="bVS-qJ-mAO" id="FB1-ur-Sna"/>
+                        <outlet property="hearingResult" destination="eur-Bv-OBx" id="asP-fI-4Tc"/>
+                        <outlet property="hearingText" destination="PyH-sX-CEo" id="hgc-td-V0m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cHC-kO-GeP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="834" y="860"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image" width="590" height="182"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

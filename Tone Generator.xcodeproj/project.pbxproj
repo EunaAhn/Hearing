@@ -1,0 +1,663 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 53;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F407EB5F2920E7150028B265 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F407EB5E2920E7150028B265 /* Charts.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		F407EB602920E7690028B265 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F407EB5E2920E7150028B265 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F454C2552920831800C87AF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F454C2542920831800C87AF3 /* AppDelegate.swift */; };
+		F454C2572920831800C87AF3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F454C2562920831800C87AF3 /* SceneDelegate.swift */; };
+		F454C25C2920831800C87AF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F454C25A2920831800C87AF3 /* Main.storyboard */; };
+		F454C25E2920831800C87AF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F454C25D2920831800C87AF3 /* Assets.xcassets */; };
+		F454C2612920831800C87AF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F454C25F2920831800C87AF3 /* LaunchScreen.storyboard */; };
+		F454C26C2920831800C87AF3 /* Tone_GeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F454C26B2920831800C87AF3 /* Tone_GeneratorTests.swift */; };
+		F454C2762920831800C87AF3 /* Tone_GeneratorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F454C2752920831800C87AF3 /* Tone_GeneratorUITests.swift */; };
+		F454C2782920831800C87AF3 /* Tone_GeneratorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F454C2772920831800C87AF3 /* Tone_GeneratorUITestsLaunchTests.swift */; };
+		F454C285292083F600C87AF3 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F454C284292083F600C87AF3 /* TestViewController.swift */; };
+		F454C28E2920852600C87AF3 /* AVTonePlayerUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F454C28D2920852600C87AF3 /* AVTonePlayerUnit.swift */; };
+		F454C29A2920CF2200C87AF3 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F454C2992920CF2200C87AF3 /* ChartViewController.swift */; };
+		F454C29D2920D2D500C87AF3 /* BalloonMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F454C29C2920D2D400C87AF3 /* BalloonMarker.swift */; };
+		F4EB8922292D0976000F7548 /* LargeValueFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EB8921292D0976000F7548 /* LargeValueFormatter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F454C2682920831800C87AF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F454C2492920831700C87AF3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F454C2502920831800C87AF3;
+			remoteInfo = "Tone Generator";
+		};
+		F454C2722920831800C87AF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F454C2492920831700C87AF3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F454C2502920831800C87AF3;
+			remoteInfo = "Tone Generator";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F4D0A98E2920E08100426F9A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F407EB602920E7690028B265 /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F407EB5E2920E7150028B265 /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F454C2512920831800C87AF3 /* Tone Generator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tone Generator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F454C2542920831800C87AF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F454C2562920831800C87AF3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F454C25B2920831800C87AF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F454C25D2920831800C87AF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F454C2602920831800C87AF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F454C2622920831800C87AF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F454C2672920831800C87AF3 /* Tone GeneratorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tone GeneratorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F454C26B2920831800C87AF3 /* Tone_GeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tone_GeneratorTests.swift; sourceTree = "<group>"; };
+		F454C2712920831800C87AF3 /* Tone GeneratorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tone GeneratorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F454C2752920831800C87AF3 /* Tone_GeneratorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tone_GeneratorUITests.swift; sourceTree = "<group>"; };
+		F454C2772920831800C87AF3 /* Tone_GeneratorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tone_GeneratorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F454C284292083F600C87AF3 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		F454C28D2920852600C87AF3 /* AVTonePlayerUnit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVTonePlayerUnit.swift; sourceTree = "<group>"; };
+		F454C2992920CF2200C87AF3 /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
+		F454C29C2920D2D400C87AF3 /* BalloonMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalloonMarker.swift; sourceTree = "<group>"; };
+		F4EB8921292D0976000F7548 /* LargeValueFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LargeValueFormatter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F454C24E2920831800C87AF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F407EB5F2920E7150028B265 /* Charts.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F454C2642920831800C87AF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F454C26E2920831800C87AF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F454C2482920831700C87AF3 = {
+			isa = PBXGroup;
+			children = (
+				F454C2532920831800C87AF3 /* Tone Generator */,
+				F454C26A2920831800C87AF3 /* Tone GeneratorTests */,
+				F454C2742920831800C87AF3 /* Tone GeneratorUITests */,
+				F454C2522920831800C87AF3 /* Products */,
+				F4D0A9892920DF7900426F9A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F454C2522920831800C87AF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F454C2512920831800C87AF3 /* Tone Generator.app */,
+				F454C2672920831800C87AF3 /* Tone GeneratorTests.xctest */,
+				F454C2712920831800C87AF3 /* Tone GeneratorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F454C2532920831800C87AF3 /* Tone Generator */ = {
+			isa = PBXGroup;
+			children = (
+				F454C29B2920D2BC00C87AF3 /* ChartUI */,
+				F454C28D2920852600C87AF3 /* AVTonePlayerUnit.swift */,
+				F454C2542920831800C87AF3 /* AppDelegate.swift */,
+				F454C2562920831800C87AF3 /* SceneDelegate.swift */,
+				F454C25A2920831800C87AF3 /* Main.storyboard */,
+				F454C25D2920831800C87AF3 /* Assets.xcassets */,
+				F454C25F2920831800C87AF3 /* LaunchScreen.storyboard */,
+				F454C2622920831800C87AF3 /* Info.plist */,
+				F454C284292083F600C87AF3 /* TestViewController.swift */,
+				F454C2992920CF2200C87AF3 /* ChartViewController.swift */,
+			);
+			path = "Tone Generator";
+			sourceTree = "<group>";
+		};
+		F454C26A2920831800C87AF3 /* Tone GeneratorTests */ = {
+			isa = PBXGroup;
+			children = (
+				F454C26B2920831800C87AF3 /* Tone_GeneratorTests.swift */,
+			);
+			path = "Tone GeneratorTests";
+			sourceTree = "<group>";
+		};
+		F454C2742920831800C87AF3 /* Tone GeneratorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F454C2752920831800C87AF3 /* Tone_GeneratorUITests.swift */,
+				F454C2772920831800C87AF3 /* Tone_GeneratorUITestsLaunchTests.swift */,
+			);
+			path = "Tone GeneratorUITests";
+			sourceTree = "<group>";
+		};
+		F454C29B2920D2BC00C87AF3 /* ChartUI */ = {
+			isa = PBXGroup;
+			children = (
+				F4EB8921292D0976000F7548 /* LargeValueFormatter.swift */,
+				F454C29C2920D2D400C87AF3 /* BalloonMarker.swift */,
+			);
+			path = ChartUI;
+			sourceTree = "<group>";
+		};
+		F4D0A9892920DF7900426F9A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F407EB5E2920E7150028B265 /* Charts.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F454C2502920831800C87AF3 /* Tone Generator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F454C27B2920831800C87AF3 /* Build configuration list for PBXNativeTarget "Tone Generator" */;
+			buildPhases = (
+				F454C24D2920831800C87AF3 /* Sources */,
+				F454C24E2920831800C87AF3 /* Frameworks */,
+				F454C24F2920831800C87AF3 /* Resources */,
+				F4D0A98E2920E08100426F9A /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tone Generator";
+			productName = "Tone Generator";
+			productReference = F454C2512920831800C87AF3 /* Tone Generator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F454C2662920831800C87AF3 /* Tone GeneratorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F454C27E2920831800C87AF3 /* Build configuration list for PBXNativeTarget "Tone GeneratorTests" */;
+			buildPhases = (
+				F454C2632920831800C87AF3 /* Sources */,
+				F454C2642920831800C87AF3 /* Frameworks */,
+				F454C2652920831800C87AF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F454C2692920831800C87AF3 /* PBXTargetDependency */,
+			);
+			name = "Tone GeneratorTests";
+			productName = "Tone GeneratorTests";
+			productReference = F454C2672920831800C87AF3 /* Tone GeneratorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F454C2702920831800C87AF3 /* Tone GeneratorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F454C2812920831800C87AF3 /* Build configuration list for PBXNativeTarget "Tone GeneratorUITests" */;
+			buildPhases = (
+				F454C26D2920831800C87AF3 /* Sources */,
+				F454C26E2920831800C87AF3 /* Frameworks */,
+				F454C26F2920831800C87AF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F454C2732920831800C87AF3 /* PBXTargetDependency */,
+			);
+			name = "Tone GeneratorUITests";
+			productName = "Tone GeneratorUITests";
+			productReference = F454C2712920831800C87AF3 /* Tone GeneratorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F454C2492920831700C87AF3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					F454C2502920831800C87AF3 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					F454C2662920831800C87AF3 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = F454C2502920831800C87AF3;
+					};
+					F454C2702920831800C87AF3 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = F454C2502920831800C87AF3;
+					};
+				};
+			};
+			buildConfigurationList = F454C24C2920831700C87AF3 /* Build configuration list for PBXProject "Tone Generator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F454C2482920831700C87AF3;
+			productRefGroup = F454C2522920831800C87AF3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F454C2502920831800C87AF3 /* Tone Generator */,
+				F454C2662920831800C87AF3 /* Tone GeneratorTests */,
+				F454C2702920831800C87AF3 /* Tone GeneratorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F454C24F2920831800C87AF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F454C2612920831800C87AF3 /* LaunchScreen.storyboard in Resources */,
+				F454C25E2920831800C87AF3 /* Assets.xcassets in Resources */,
+				F454C25C2920831800C87AF3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F454C2652920831800C87AF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F454C26F2920831800C87AF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F454C24D2920831800C87AF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F454C2552920831800C87AF3 /* AppDelegate.swift in Sources */,
+				F454C28E2920852600C87AF3 /* AVTonePlayerUnit.swift in Sources */,
+				F454C285292083F600C87AF3 /* TestViewController.swift in Sources */,
+				F454C29D2920D2D500C87AF3 /* BalloonMarker.swift in Sources */,
+				F454C2572920831800C87AF3 /* SceneDelegate.swift in Sources */,
+				F454C29A2920CF2200C87AF3 /* ChartViewController.swift in Sources */,
+				F4EB8922292D0976000F7548 /* LargeValueFormatter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F454C2632920831800C87AF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F454C26C2920831800C87AF3 /* Tone_GeneratorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F454C26D2920831800C87AF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F454C2782920831800C87AF3 /* Tone_GeneratorUITestsLaunchTests.swift in Sources */,
+				F454C2762920831800C87AF3 /* Tone_GeneratorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F454C2692920831800C87AF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F454C2502920831800C87AF3 /* Tone Generator */;
+			targetProxy = F454C2682920831800C87AF3 /* PBXContainerItemProxy */;
+		};
+		F454C2732920831800C87AF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F454C2502920831800C87AF3 /* Tone Generator */;
+			targetProxy = F454C2722920831800C87AF3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F454C25A2920831800C87AF3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F454C25B2920831800C87AF3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F454C25F2920831800C87AF3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F454C2602920831800C87AF3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F454C2792920831800C87AF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F454C27A2920831800C87AF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F454C27C2920831800C87AF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L7ZDVPAZ3R;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Tone Generator/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Hearing;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.digipine.ios.Tone-Generator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F454C27D2920831800C87AF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L7ZDVPAZ3R;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Tone Generator/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Hearing;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.digipine.ios.Tone-Generator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F454C27F2920831800C87AF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L7ZDVPAZ3R;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.digipine.ios.Tone-GeneratorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tone Generator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Tone Generator";
+			};
+			name = Debug;
+		};
+		F454C2802920831800C87AF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L7ZDVPAZ3R;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.digipine.ios.Tone-GeneratorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tone Generator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Tone Generator";
+			};
+			name = Release;
+		};
+		F454C2822920831800C87AF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L7ZDVPAZ3R;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.digipine.ios.Tone-GeneratorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Tone Generator";
+			};
+			name = Debug;
+		};
+		F454C2832920831800C87AF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L7ZDVPAZ3R;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.digipine.ios.Tone-GeneratorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Tone Generator";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F454C24C2920831700C87AF3 /* Build configuration list for PBXProject "Tone Generator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F454C2792920831800C87AF3 /* Debug */,
+				F454C27A2920831800C87AF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F454C27B2920831800C87AF3 /* Build configuration list for PBXNativeTarget "Tone Generator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F454C27C2920831800C87AF3 /* Debug */,
+				F454C27D2920831800C87AF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F454C27E2920831800C87AF3 /* Build configuration list for PBXNativeTarget "Tone GeneratorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F454C27F2920831800C87AF3 /* Debug */,
+				F454C2802920831800C87AF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F454C2812920831800C87AF3 /* Build configuration list for PBXNativeTarget "Tone GeneratorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F454C2822920831800C87AF3 /* Debug */,
+				F454C2832920831800C87AF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F454C2492920831700C87AF3 /* Project object */;
+}
